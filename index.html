@@ -1,64 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>First mobile portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@100;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="main.css" />
-    <script
-      src="https://kit.fontawesome.com/667d7efdcc.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header class="header-mobile">
-      <nav class="nav">
-        <div class="logo"><a href="#"> I'm Hussein</a></div>
-        <div class="menu">
-          <nav class="btn-hover"><i class="fa-solid fa-bars"></i></nav>
-        </div>
-      </nav>
-      <section class="introduction">
-        <h1 class="greeting-header">
-          Hi I'm Hussein.
-          <br />
-          Glad to see <br />
-          you
-        </h1>
-        <p class="explain-self">
-          I am a software developer! I can help you build a product , feature or
-          website Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don ot hesitate to contact
-          me.
-        </p>
-        <div class="connection">
-          <a href="#" class="connect-header">LET'S CONNECT</a>
-          <ul class="social-links">
-            <li>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-github"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-m"></i></a>
-            </li>
-            <li>
-              <a href="#"><img src="./img/Vector.jpg" class="vector" /></a>
-            </li>
-          </ul>
-        </div>
-      </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ibrahim Mohamed">
+    <meta name="description" content="the official website for The little taco shop">
+    <title>THE OFFICIAL LITTLE TACO SHOP</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header__h1">Little Taco Shop</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a href="#menu">Menu</a>
+
+                </li>
+                <li>
+                    <a href="hours.html">Hours</a>
+
+                </li>
+                <li>
+                    <a href="contact.html">contact</a>
+
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+ 
+                 </li>
+            </ul>
+        </nav>
     </header>
-  </body>
+
+    <section class="hero">
+        <h2 class="hero__h2"> SOO DHAWOOW INA ADEER</h2>
+        <figure>
+            <img src="img/tacos_and_drink_1000x667.png" alt="Tacos And Drink" title="We love tacos!" width="1000" height="667">
+            <figcaption class="offscreen">
+                Tacos And a Drink
+            </figcaption>
+        </figure>
+    </section>
+
+    <main class="main">
+        <article id="menu" class="main__article menu">
+            <h2 class="menu__h2">Our Menu.</h2>
+            <table class="menu__container">
+                <caption class="offscreen">Our Tacos</caption>
+                <thead>
+                    <tr>
+                        <th class="menu__header" scope="col">Tacos</th>
+                        <th class="menu__header" scope="col">Quantity</th>
+                        <th class="menu__header" scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="menu__item menu__cr" scope="row" rowspan="3">
+                            crunchy
+                        </th>
+                        <td class="menu__item">1</td>
+                        <td class="menu__item">$1.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">2</td>
+                        <td class="menu__item">$2.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">3</td>
+                        <td class="menu__item">$3.25</td>
+                    </tr>
+                    <tr>
+                        <th class="menu__item menu__sf" scope="row" rowspan="3">
+                            soft
+                        </th>
+                        <td class="menu__item">1</td>
+                        <td class="menu__item">$2.00</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">2</td>
+                        <td class="menu__item">$3.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">3</td>
+                        <td class="menu__item">$4.50</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                       <td class="menu__item menu__cs" colspan="3">
+                        Chips &amp; Salsa $2
+                       </td> 
+                    </tr>
+                </tfoot>
+            </table>
+            <p class="center">
+              <a href="#">Back To Top</a>  
+            </p>
+        </article>
+    </main>
+    <hr>
+    <footer class="footer">
+
+        <p>
+             <span class="nowrap"> copyright &copy;</span>
+             <span class="nowrap"> Little Taco Shop</span>
+            </p>
+    </footer>
+</body>
 </html>
